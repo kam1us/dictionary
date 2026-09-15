@@ -1,0 +1,26 @@
+# ---- 编译产物 (Linux ELF 可执行文件) ----
+/client
+/server
+*.o
+*.obj
+*.out
+a.out
+
+# ---- 运行时自动生成的数据库 ----
+# my.db 由 server.c 中的 sqlite3_open("my.db") 在启动时自动创建
+my.db
+*.db
+*.db-journal
+*.db-wal
+
+# ---- 编辑器 / IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- 操作系统 ----
+.DS_Store
+Thumbs.db
+desktop.ini

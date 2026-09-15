@@ -1,0 +1,13 @@
+# 词典数据：保留原始 CRLF 字节，禁止任何换行转换
+dict.txt -text
+
+# 源码与配置：统一以 LF 存储（本项目面向 Linux 编译运行）
+*.c         text eol=lf
+*.h         text eol=lf
+*.md        text eol=lf
+.gitignore  text eol=lf
+.gitattributes text eol=lf
+
+# 二进制文件不做转换
+*.db        -text
+*.o         -text
